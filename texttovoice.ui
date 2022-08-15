@@ -1,0 +1,542 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1059</width>
+    <height>678</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QFrame" name="FrameControll">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1061</width>
+      <height>681</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>1061</width>
+       <height>691</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap>image/2.png</pixmap>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QSlider" name="Rate">
+     <property name="geometry">
+      <rect>
+       <x>530</x>
+       <y>300</y>
+       <width>22</width>
+       <height>160</height>
+      </rect>
+     </property>
+     <property name="minimum">
+      <number>1</number>
+     </property>
+     <property name="maximum">
+      <number>10</number>
+     </property>
+     <property name="pageStep">
+      <number>1</number>
+     </property>
+     <property name="sliderPosition">
+      <number>1</number>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+    </widget>
+    <widget class="QSlider" name="Volume">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>300</y>
+       <width>22</width>
+       <height>160</height>
+      </rect>
+     </property>
+     <property name="minimum">
+      <number>1</number>
+     </property>
+     <property name="maximum">
+      <number>10</number>
+     </property>
+     <property name="singleStep">
+      <number>1</number>
+     </property>
+     <property name="pageStep">
+      <number>1</number>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="BSave">
+     <property name="geometry">
+      <rect>
+       <x>490</x>
+       <y>557</y>
+       <width>93</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>SAVE</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="Voice">
+     <property name="geometry">
+      <rect>
+       <x>630</x>
+       <y>400</y>
+       <width>351</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="FrameMain">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1061</width>
+      <height>681</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QPushButton" name="BOK">
+     <property name="geometry">
+      <rect>
+       <x>480</x>
+       <y>580</y>
+       <width>93</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>20</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>OK</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="BSetting">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>60</y>
+       <width>51</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>20</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>image/sitting.png</normaloff>image/sitting.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>50</width>
+       <height>45</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QTextEdit" name="Edit">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>160</y>
+       <width>661</width>
+       <height>401</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="BOpenFolder">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>110</y>
+       <width>51</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>20</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>image/tải xuống (1).png</normaloff>image/tải xuống (1).png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>50</width>
+       <height>50</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>1061</width>
+       <height>691</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap>image/TEXT.png</pixmap>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="BDowload">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>0</y>
+       <width>50</width>
+       <height>50</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>20</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>image/Download-Icon.png</normaloff>image/Download-Icon.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>50</width>
+       <height>50</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QFrame" name="FrameDowload">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>0</y>
+       <width>191</width>
+       <height>80</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QLineEdit" name="Name">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>10</y>
+        <width>181</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Enter Name File Here</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="BDowload2">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>40</y>
+        <width>93</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Segoe UI Black</family>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>DOWLOAD</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QPushButton" name="BMic">
+     <property name="geometry">
+      <rect>
+       <x>810</x>
+       <y>100</y>
+       <width>51</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>20</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>image/mic.png</normaloff>image/mic.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>50</width>
+       <height>50</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QFrame" name="FrameChooseLanguage">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>160</y>
+       <width>681</width>
+       <height>521</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Box</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QComboBox" name="Language">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>120</y>
+        <width>311</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>16</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="BOK_Language">
+      <property name="geometry">
+       <rect>
+        <x>520</x>
+        <y>130</y>
+        <width>61</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>20</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>v</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="Country">
+      <property name="geometry">
+       <rect>
+        <x>170</x>
+        <y>210</y>
+        <width>391</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>16</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>681</width>
+        <height>521</height>
+       </rect>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>image/5.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="BOK_2">
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>300</y>
+        <width>61</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>20</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>OK</string>
+      </property>
+     </widget>
+     <zorder>label_3</zorder>
+     <zorder>Language</zorder>
+     <zorder>BOK_Language</zorder>
+     <zorder>Country</zorder>
+     <zorder>BOK_2</zorder>
+    </widget>
+    <widget class="QPushButton" name="BSettingLanguage">
+     <property name="geometry">
+      <rect>
+       <x>810</x>
+       <y>50</y>
+       <width>51</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>20</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>image/sitting.png</normaloff>image/sitting.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>50</width>
+       <height>45</height>
+      </size>
+     </property>
+    </widget>
+    <zorder>label</zorder>
+    <zorder>BOpenFolder</zorder>
+    <zorder>BSetting</zorder>
+    <zorder>Edit</zorder>
+    <zorder>BOK</zorder>
+    <zorder>BDowload</zorder>
+    <zorder>FrameDowload</zorder>
+    <zorder>BMic</zorder>
+    <zorder>FrameChooseLanguage</zorder>
+    <zorder>BSettingLanguage</zorder>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
